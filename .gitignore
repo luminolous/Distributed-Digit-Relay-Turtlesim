@@ -1,2 +1,8 @@
 # documents
 docs/tugas-robotik.md
+docs/rencana-kerja.md
+# colcon
+build/
+install/
+log/
+__pycache__/
