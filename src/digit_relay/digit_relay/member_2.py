@@ -8,12 +8,15 @@ class Member4(RelayMemberNode):
     PEN_COLOR = (0, 255, 255)  # cyan
 
     def draw_cycle1(self):
-        # Number 2: 
-        self.stroke([(0.0, 2.0), (1.0, 2.0), (1.0, 0.0), (0.0, 0.0)])
-        self.stroke([(0.0, 1.0), (1.0, 1.0)])
+        # Number 2: horizontal top, vertical down, horizontol mid, vertical down, horizontal bottom
+        self.stroke([(0.0, 2.0), (1.0, 2.0)])
+        self.stroke([(1.0, 2.0), (1.0, 1.0)])
+        self.stroke([(1.0, 1.0), (0.0, 1.0)])
+        self.stroke([(0.0, 1.0), (0.0, 0.0)])
+        self.stroke([(0.0, 0.0), (1.0, 0.0)])
 
     def draw_cycle2(self):
-        # Number 9: 
+        # Number 9: place the digit in its own glyph box within slot 2
         self.draw_digit(9)
 
 
